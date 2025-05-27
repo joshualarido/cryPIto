@@ -1,0 +1,140 @@
+.guide-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.guide-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.guide-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.guide {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.guide-video {
+    width: 50%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    object-fit: fill;
+}
+
+.guide-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.guide-desc > h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.guide-desc p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+/* FAQ SECTION */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    gap: 1.25rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question img {
+    width: 1.5rem;
+    transition: transform 0.3s ease;
+    opacity: 50%;
+}
+
+.faq-question h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.faq p {
+    font-size: 1rem;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.faq.open p {
+    display: block;
+}
+
+.faq.open .faq-question img {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .guide-header {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .guide {
+        flex-direction: column;
+    }
+
+    .guide-video {
+        width: 100%;
+    }
+
+    .faq-question {
+        gap: 2rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .faq-question img {
+        width: 1rem;
+        transition: transform 0.3s ease;
+    }
+}
