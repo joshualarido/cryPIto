@@ -44,7 +44,7 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .benefit-header, .benefit {
         justify-content: center;
         align-items: center;

@@ -29,24 +29,27 @@
 }
 
 .ranking {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr auto;
    align-items: center;
    width: 100%;
    padding: 0 8rem;
+   gap: 2rem;
 }
 
 .ranking-header {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: start;
    align-items: center;
    gap: 1.25rem;
 }
 
 .ranking-header > img {
-   width: 35%;
+   width: 5rem;
+   padding: 0.5rem;
+   background-color: white;
+   border-radius: 100%;
 }
 
 .ranking-header-text {
@@ -153,7 +156,15 @@ hr {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 1.125rem;
+   gap: 1.5rem;
+}
+
+.coin-card-header > img {
+   width: 7rem;
+   height: auto;
+   padding: 1rem;
+   background-color: white;
+   border-radius: 100%;
 }
 
 .coin-card-header > h4 {
@@ -170,12 +181,12 @@ hr {
 }
 
 .coin-card-text > h5 {
-   font-size: 1.25rem;
+   font-size: 1rem;
    text-align: center;
 }
 
 .coin-card-text > h6 {
-   font-size: 1rem;
+   font-size: 0.75rem;
    text-align: center;
 }
 
@@ -192,7 +203,7 @@ hr {
    color: #7249e0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
    .ranking {
       padding: 0 2rem;
       flex-direction: row;
@@ -215,6 +226,7 @@ hr {
 
 @media screen and (max-width: 767px) {
    .ranking {
+      display: flex;
       padding: 0 2rem;
       flex-direction: column;
       gap: 2rem;

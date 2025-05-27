@@ -108,6 +108,10 @@ a {
     color: #01B82B;
 }
 
+.decrease {
+    color: rgb(214, 37, 37);
+}
+
 .mobile-menu {
     display: flex;
     flex-direction: row;
@@ -338,7 +342,7 @@ nav {
     font-size: 1rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .mobile-hidden {
         display: none !important;
     }

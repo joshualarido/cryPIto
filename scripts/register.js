@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Gender validation
-        if (!gender.value) {
+        if (gender.value === "none") {
             showError(gender, "Please select a gender");
             isValid = false;
         }

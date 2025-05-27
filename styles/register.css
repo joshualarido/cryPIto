@@ -83,6 +83,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
+input[type="date"] {
+    width: 100%;
+} 
+
 input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -144,7 +148,7 @@ input::placeholder {
     border: 1px solid red !important;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .card {
       width: 100%;
       padding: 2rem;
